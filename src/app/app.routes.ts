@@ -9,7 +9,6 @@ export const routes: Routes = [
         children: [
             {
                 path: 'trending',
-
                 loadComponent: () =>
                     import('./gifs/pages/trending-page/trending-page').then(m => m.TrendingPage)
             },
