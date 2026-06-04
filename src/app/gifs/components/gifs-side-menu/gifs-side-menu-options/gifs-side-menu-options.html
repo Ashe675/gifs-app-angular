@@ -14,7 +14,7 @@
 
     <div class="px-2">
         @for (key of gifsService.searchHistoryKeys(); track key) {
-        <a [routerLink]="['gifs/search', key]" routerLinkActive="bg-blue-700"
+        <a [routerLink]="['/dashboard/history', key]" routerLinkActive="bg-blue-700"
             class="w-full px-2 inline-flex space-x-2 items-center border-b border-slate-700 py-2  hover:bg-white/5 transition ease-linear duration-150">
             <div>
                 <i [class]="'fa-solid fa-clock-rotate-left'"></i>
